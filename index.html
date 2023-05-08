@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="./cloudy.png" alt="cloudy"></li>
+            <li>                
+                <h1>My Radar - Weather App</h1>
+            </li>
+            
+        </ul>
+    </nav> 
+    
+    <div class="main">
+
+        <div class="sbar">
+            <img src="./cloudy.png" alt="cloudy">
+            <h2>My Radar</h2>
+            <div class="search">
+                <input name="a" id="a" type="text" placeholder="City">
+            </div>
+            <div class="btn">
+                <button onclick="checkWeather()">Search</button> 
+            </div>
+
+
+            <!-- <div class="sbar">
+                <img src="./cloudy.png" alt="cloudy">
+                <h2>My Radar</h2>
+                <div class="search">
+                    <input name="a" id="a" type="text" placeholder="City">
+                </div>
+                <div class="btn">
+                    <button onclick="checkWeather(a)">Search</button> 
+                </div> -->
+
+            
+        </div>
+
+        <div class="weather-info">
+            <h3 class="city">City</h3>
+            <div class="temperature">
+              <img src="./cloudy.png" alt="cloudy">
+              <p>Temperature: <span id="temperature"></span> °C</p>
+            </div>
+            <div class="wind">
+              <img src="./wind.png" alt="wind">
+              <p>Wind Speed: <span id="wind-speed"></span> Km/h</p>
+            </div>
+          </div>     
+           
+                  
+    </div>
+</body>
+</html>
